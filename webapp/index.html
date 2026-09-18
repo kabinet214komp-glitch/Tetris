@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <title>Tetris</title>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="game">
+
+    <header>
+        <div>
+            <div class="logo">TETRIS</div>
+            <div class="subtitle">TELEGRAM MINI APP</div>
+        </div>
+
+        <button id="pauseBtn">Ⅱ</button>
+    </header>
+
+    <div class="stats">
+
+        <div class="stat">
+            <span>СЧЁТ</span>
+            <strong id="score">0</strong>
+        </div>
+
+        <div class="stat">
+            <span>ЛИНИИ</span>
+            <strong id="lines">0</strong>
+        </div>
+
+        <div class="stat">
+            <span>УРОВЕНЬ</span>
+            <strong id="level">1</strong>
+        </div>
+
+    </div>
+
+    <div class="board-wrapper">
+
+        <canvas id="game"></canvas>
+
+        <div id="overlay" class="overlay">
+
+            <div class="overlay-card">
+
+                <div class="big-icon">🧱</div>
+
+                <h1 id="overlayTitle">TETRIS</h1>
+
+                <p id="overlayText">
+                    Собери как можно больше линий!
+                </p>
+
+                <button id="startBtn">
+                    ▶ НАЧАТЬ ИГРУ
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="next-container">
+
+        <span>СЛЕДУЮЩАЯ</span>
+
+        <canvas id="next"></canvas>
+
+    </div>
+
+    <div class="controls">
+
+        <button data-key="left">←</button>
+        <button data-key="rotate">↻</button>
+        <button data-key="right">→</button>
+        <button data-key="down">↓</button>
+
+    </div>
+
+    <div class="hint">
+        ПК: ← → ↓ ↑ &nbsp; • &nbsp; Телефон: кнопки ниже
+    </div>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
