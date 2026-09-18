@@ -9,7 +9,7 @@ from aiogram.types import WebAppInfo, InlineKeyboardMarkup, InlineKeyboardButton
 load_dotenv()
 
 TOKEN = os.getenv("BOT_TOKEN")
-WEBAPP_URL = os.getenv("WEBAPP_URL", "https://YOUR-DOMAIN.com")
+WEBAPP_URL = os.getenv("https://tetris-pf1j.onrender.com")
 
 print("TOKEN найден:", TOKEN is not None)
 
