@@ -12,7 +12,7 @@ import uvicorn
 load_dotenv()
 
 TOKEN = os.getenv("BOT_TOKEN")
-WEBAPP_URL = os.getenv("WEBAPP_URL")
+WEBAPP_URL = os.getenv("https://tetris-pf1j.onrender.com")
 
 if not TOKEN:
     raise ValueError("BOT_TOKEN не найден!")
